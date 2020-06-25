@@ -9,5 +9,14 @@ function setGradient() {
   css.textContent = body.style.background + ";";
 }
 
+function copy(text) {
+  var textarea = document.createElement("textarea");
+  textarea.value = text;
+  document.body.appendChild(textarea);
+  textarea.select();
+  document.execCommand("copy");
+  document.body.removeChild(textarea);
+}
+
 color1.addEventListener("input", setGradient);
 color2.addEventListener("input", setGradient);
