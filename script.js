@@ -9,7 +9,9 @@ function setGradient() {
   css.textContent = body.style.background + ";";
 }
 
-function copy(text) {
+function copy(
+  text = "linear-gradient(to right, rgb(255, 0, 0), rgb(255, 255, 0))"
+) {
   var textarea = document.createElement("textarea");
   textarea.value = text;
   document.body.appendChild(textarea);
