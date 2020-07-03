@@ -4,7 +4,7 @@ var color2 = document.querySelector(".color2");
 var body = document.getElementById("gradient");
 
 const DEFAULT_GRADIENT =
-  "linear-gradient(to right, rgb(255, 0, 0), rgb(255, 255, 0));";
+  "linear-gradient(to right, rgb(255, 0, 0), rgb(255, 255, 0))";
 
 function setGradient() {
   body.style.background = `linear-gradient(to right, ${color1.value}, ${color2.value})`;
